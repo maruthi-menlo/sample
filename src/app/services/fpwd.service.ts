@@ -11,7 +11,7 @@ export class FpwdService {
   constructor( private http:HttpClient) { }
 
   forgotPwd(data){
-    return this.http.post('https://www.google.com',data).pipe(map(res=>{
+    return this.http.post('http://localhost:5000/api/v1/forgot_password',data).pipe(map(res=>{
       return res;
     }))
   }

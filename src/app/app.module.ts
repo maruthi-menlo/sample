@@ -8,9 +8,11 @@ import { ForgotpasswordModule } from './components/forgotpassword/forgotpassword
 import { RouterModule, Routes } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule  } from '@angular/common/http';
+import { LoginModule } from './components/login/login.module';
 @NgModule({
   declarations: [
     AppComponent
+    
     
   ],
   imports: [
@@ -19,7 +21,8 @@ import { HttpClientModule  } from '@angular/common/http';
     ForgotpasswordModule,
     RouterModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    LoginModule
   ],
   providers: [],
   bootstrap: [AppComponent]

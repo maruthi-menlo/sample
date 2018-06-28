@@ -2,10 +2,12 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { ForgotpasswordComponent } from './components/forgotpassword/forgotpassword.component';
+import { LoginComponent } from './components/login/login.component';
 
 const routes: Routes = [
   { path: 'forgotpassword', component: ForgotpasswordComponent },
-  { path: '', pathMatch:'full', redirectTo:"/forgotpassword" }
+  { path: 'login', component:LoginComponent },
+  { path: '', pathMatch:'full', redirectTo:"/login" }
 ];
 
 @NgModule({
